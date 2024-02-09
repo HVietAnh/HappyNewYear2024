@@ -13,9 +13,6 @@ let x = setInterval(function stime(){
     document.getElementById("hours").innerText = hours
     document.getElementById("minutes").innerText = minutes
     document.getElementById("seconds").innerText = seconds
-
-    if(D<0){
-        clearInterval(x);
-        window.location.href="intro.html"
-    }
+    clearInterval(x);
+    window.location.href="intro.html"
 }, 0.1);
